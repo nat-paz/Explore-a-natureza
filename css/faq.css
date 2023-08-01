@@ -1,0 +1,36 @@
+.faq1{
+    margin-left: 80px;
+    padding: 20px 0px 0px 0px;
+}
+summary{
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-brown);
+    border-bottom: 1px solid #D8D8D8;
+    padding: 10px;
+    font-family: var(--font-primary);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+summary::after{
+    content: '\25BC';
+    font-size: 0.985rem;
+    padding: 10px;
+}
+.faq-title{
+    color: var(--color-title);
+    font-family: var(--font-display);
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 26px 0px 0px 0px 0px;
+}
+p{
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    font-size: 17.6px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}

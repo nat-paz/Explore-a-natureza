@@ -1,0 +1,15 @@
+.footer{
+    max-width: var(--width);
+    height: 64px;
+    margin: 2rem 0 2rem auto;
+    background-color: var(--background-green);
+    color: var(--color-white);
+    display: flex;
+    margin-top: 50px;
+    }
+.footer-text{
+    color: var(--color-white);
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+}

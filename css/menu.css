@@ -1,0 +1,31 @@
+
+.menu{
+    max-width: var(--width);
+    height: 64px;
+    margin: 2rem 0 2rem auto;
+    background-color: var(--background-green);
+    color: var(--color-white);
+    display: flex;
+    }
+.menu-link{
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 6px 10px;
+    letter-spacing: 1.6px;
+    align-items: center;
+    line-height: normal;
+    border-radius: 5px;
+    color: var(--color-white);
+    margin: 5px 0px 5px 0px;
+}
+a{
+    color: var(--color-white);
+}
+.menu-link:hover{
+    background-color: var(--color-white);
+    color: var(--color-brown);
+}
+a:hover{
+    color: var(--color-brown);
+}
