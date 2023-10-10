@@ -24,3 +24,34 @@ iframe{
     margin-top: 50px;
     display: flex;
 }
+
+@media screen and (max-width: 768px) {
+    .ctt-title{
+        font-size: 60px;
+    }
+    iframe{
+        margin-top: 35px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .ctt{
+        margin-left: 40px;
+        display: grid;
+        justify-content: space-around;
+    }
+    .ctt-title{
+        margin-left: 80px;
+        font-size: 55px;
+    }
+    .informações{
+        font-size: 16px;
+        gap: 0;
+        margin-left: 0px;
+    }
+    iframe{
+        height: 350px;
+        width: 400px;
+    }
+}

@@ -13,3 +13,15 @@
     display: flex;
     padding-left: 20px;
 }
+@media screen and (max-width: 768px) {
+    .footer{
+        margin: 2rem -5.5rem 2rem 4rem;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .footer{
+        margin: 2rem -5.5rem 2rem 4rem;
+    }
+
+}

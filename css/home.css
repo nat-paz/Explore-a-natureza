@@ -56,9 +56,72 @@ span{
     width: 900px;
 }
 
-.js-conteudo section{
-    display: none;
-}   
-.js-conteudo section.active{
-    display: block;
+
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 60px;
+        margin-left: 40px;
+    }
+    h2{
+        font-size: 28px;
+        margin-left: 40px;
+    }
+    .main{
+        margin-left: 40px;
+        display: grid;
+        justify-content: space-around;
+        justify-items: center;
+    }
+    .main-text{
+        margin-left: 40px;
+    }
+    .scroll{
+        height: 500px;
+        max-width: 400px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        margin-right: 35px;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 55px;
+        margin-left: 60px;
+    }
+    h2{
+        font-size: 24px;
+        justify-items: center;
+        justify-content: center;
+    }
+    .main-text{
+        font-size: 16px;
+    }
+    .main{
+        margin-left: 40px;
+        display: grid;
+        justify-content: space-around;
+        justify-items: center;
+    }
+    .main-text{
+        display: grid;
+        justify-items: center;
+    }
+    .scroll{
+        height: 500px;
+        max-width: 400px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        margin-right: 35px;
+        overflow-x: hidden;
+    }
+}
+@media screen and (min-width: 600px) {
+    .js-conteudo section{
+        display: none;
+    }   
+    .js-conteudo section.active{
+        display: block;
+    }
 }

@@ -43,6 +43,9 @@ a:hover{
 }
 
 @media screen and (max-width: 768px) {
+    .menu{
+        margin: 2rem -5.5rem 2rem 4rem;
+    }
     .js-menu{
         display: none;
         animation: fadeOut .3s forwards;
@@ -58,6 +61,7 @@ a:hover{
         top: 69px;
         left: 0;
         width: 100%;
+        margin: 1.5rem 0 auto 2rem;
         background-color: var(--background-green);
         z-index: 100;
         animation: slideDownMenu .5s forwards;
@@ -77,5 +81,22 @@ a:hover{
     to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu{
+        margin: 2rem -5.5rem 2rem 4rem;
+    }
+    .js-menu.active{
+        display: block;
+        position: absolute;
+        top: 69px;
+        left: 0;
+        width: 100%;
+        margin: 1.5rem 0 auto 4rem;
+        background-color: var(--background-green);
+        z-index: 100;
+        animation: slideDownMenu .5s forwards;
     }
 }
