@@ -86,7 +86,7 @@ a:hover{
 
 @media screen and (max-width: 600px) {
     .menu{
-        margin: 2rem -5.5rem 2rem 4rem;
+        margin: 2rem -5.5rem 2rem 2rem;
     }
     .js-menu.active{
         display: block;

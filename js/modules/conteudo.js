@@ -1,6 +1,6 @@
 export default function conteudo(){
-    const imagens= document.querySelectorAll(".js-scroll")
-    const textos = document.querySelectorAll(".js-conteudo")
+    const imagens= document.querySelectorAll(".js-scroll li")
+    const textos = document.querySelectorAll(".js-conteudo section")
     
     function ativarConteudo(indice){
         textos.forEach((item) => {

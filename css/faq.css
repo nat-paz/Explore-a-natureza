@@ -76,3 +76,13 @@ p{
         margin-left: 40px;
     }
 }
+
+@media screen and (max-width: 470px) {
+    .faq-title{
+        font-size: 48px;
+    }
+    .faq1{
+        margin-left: 15px;
+        padding: 20px 0px 0px 0px;
+    }
+}

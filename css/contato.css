@@ -55,3 +55,21 @@ iframe{
         width: 400px;
     }
 }
+
+@media screen and (max-width: 470px) {
+    .ctt{
+        margin-left: 15px;
+        display: grid;
+        justify-content: space-around;
+    }
+    .ctt-title{
+        margin-left: 40px;
+        font-size: 48px;
+    }
+    iframe{
+        height: 250px;
+        width: 300px;
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+}

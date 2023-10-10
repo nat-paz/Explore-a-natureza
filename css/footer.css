@@ -21,7 +21,10 @@
 }
 @media screen and (max-width: 600px) {
     .footer{
-        margin: 2rem -5.5rem 2rem 4rem;
+        margin: 2rem -5.5rem 2rem 2rem;
     }
-
+    .footer-text{
+        font-size: 12px;
+        padding-left: 10px;
+    }
 }
