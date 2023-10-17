@@ -5,11 +5,10 @@
     width: 600px;
     max-width: 100%;
     position: fixed;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%);
 }
-
 .modal-forms{
     background-color: #f5faf6;
     display: flex;
@@ -38,7 +37,18 @@
     display: flex;
     animation: showModal .3s forwards;
 }
-
+.tela.active{
+    filter:blur(5px);
+    -webkit-filter: blur(5px);
+}
+.msg-sucesso{
+    display: none;
+    text-align: center;
+    color: var(--color-white);
+}
+.msg-sucesso.active{
+    display: block;
+}
 @keyframes showModal{
     from{
         transform: translate(-50%, -50%) scale(0);
