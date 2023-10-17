@@ -1,15 +1,20 @@
-.menu{
+/* Estiliza a barra de menu */
+.menu {
     max-width: var(--width);
     height: 64px;
     margin: 2rem 0 2rem auto;
     background-color: var(--background-green);
     color: var(--color-white);
     display: flex;
-    }
-.js-menu{
+}
+
+/* Estiliza a lista de menu (os itens do menu) */
+.js-menu {
     display: flex;
 }
-.menu-link{
+
+/* Estiliza os itens individuais do menu */
+.menu-link {
     display: flex;
     font-size: 14px;
     font-weight: 700;
@@ -21,16 +26,24 @@
     color: var(--color-white);
     margin: 5px 0px 5px 0px;
 }
-a{
+
+/* Estiliza os links dentro dos itens do menu */
+a {
     color: var(--color-white);
 }
-.menu-link:hover{
+
+/* Estiliza os itens do menu quando o mouse passa por cima */
+.menu-link:hover {
     background-color: var(--color-white);
     color: var(--color-brown);
 }
-a:hover{
+
+/* Estiliza os links dentro dos itens do menu quando o mouse passa por cima */
+a:hover {
     color: var(--color-brown);
 }
+
+/* Estiliza o botão de toggle (para abrir o menu em telas menores) */
 .toggle {
     align-items: center;
     gap: 0.5rem;
@@ -42,20 +55,22 @@ a:hover{
     display: none;
 }
 
+/* Define as regras de estilo para telas menores (max-width: 768px) */
 @media screen and (max-width: 768px) {
-    .menu{
+    .menu {
         margin: 2rem -5.5rem 2rem 4rem;
     }
-    .js-menu{
+    .js-menu {
         display: none;
         animation: fadeOut .3s forwards;
     }
 
-    .toggle{
+    .toggle {
         display: flex;
     }
 
-    .js-menu.active{
+    /* Estiliza o menu quando está ativo (visível) em telas menores */
+    .js-menu.active {
         display: block;
         position: absolute;
         top: 69px;
@@ -67,28 +82,20 @@ a:hover{
         animation: slideDownMenu .5s forwards;
     }
 
-    .toggle span.active{
+    /* Estiliza o ícone de toggle quando o menu está ativo */
+    .toggle span.active {
         animation: slideDownMenu .5s forwards;
     }
-
-}
-@keyframes slideDownMenu {
-    from {
-        opacity: 0;
-        transform: translateX(-10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
 }
 
+/* Define as regras de estilo para telas ainda menores (max-width: 600px) */
 @media screen and (max-width: 600px) {
-    .menu{
+    .menu {
         margin: 2rem -5.5rem 2rem 2rem;
     }
-    .js-menu.active{
+
+    /* Estiliza o menu quando está ativo (visível) em telas ainda menores */
+    .js-menu.active {
         display: block;
         position: absolute;
         top: 69px;
@@ -98,5 +105,17 @@ a:hover{
         background-color: var(--background-green);
         z-index: 100;
         animation: slideDownMenu .5s forwards;
+    }
+}
+
+/* Define a animação de deslizar para baixo (slideDown) do menu */
+@keyframes slideDownMenu {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }

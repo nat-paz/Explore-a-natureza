@@ -1,5 +1,6 @@
-.modal{
-    display: none;
+/* Estiliza a modal */
+.modal {
+    display: none; /* Inicialmente oculta a modal */
     padding: 20px;
     align-items: center;
     width: 600px;
@@ -9,7 +10,9 @@
     left: 50%;
     transform: translateX(-50%);
 }
-.modal-forms{
+
+/* Estiliza o formulário dentro da modal */
+.modal-forms {
     background-color: #f5faf6;
     display: flex;
     flex-direction: column;
@@ -19,38 +22,49 @@
     padding: 40px;
 }
 
-.modal-forms input{
+/* Estiliza as entradas de texto no formulário */
+.modal-forms input {
     border: 2px solid #6e6e6e;
     padding: 10px;
 }
 
-.modal-close{
+/* Estiliza o botão de fechar a modal */
+.modal-close {
     position: absolute;
     top: -6px;
     right: 0;
     cursor: pointer;
     background-color: tomato;
-    border-radius:20%;
+    border-radius: 20%;
 }
 
-.js-modal.active{
+/* Define as animações da modal quando ativa */
+.js-modal.active {
     display: flex;
     animation: showModal .3s forwards;
 }
-.tela.active{
-    filter:blur(5px);
-    -webkit-filter: blur(5px);
+
+/* Estiliza o fundo desfocado (blur) quando a modal está ativa */
+.tela.active {
+    filter: blur(5px); /* Aplica um desfoque de 5px no fundo */
+    -webkit-filter: blur(5px); /* Para navegadores baseados em WebKit */
 }
-.msg-sucesso{
+
+/* Estiliza a mensagem de sucesso, inicialmente oculta */
+.msg-sucesso {
     display: none;
     text-align: center;
     color: var(--color-white);
 }
-.msg-sucesso.active{
+
+/* Define o estilo da mensagem de sucesso quando ativa */
+.msg-sucesso.active {
     display: block;
 }
-@keyframes showModal{
-    from{
+
+/* Define a animação de mostrar a modal */
+@keyframes showModal {
+    from {
         transform: translate(-50%, -50%) scale(0);
         opacity: 0;
     }

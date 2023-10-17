@@ -1,4 +1,5 @@
-.footer{
+/* Define o estilo do rodapé */
+.footer {
     max-width: var(--width);
     height: 64px;
     margin: 2rem 0 2rem auto;
@@ -6,25 +7,31 @@
     color: var(--color-white);
     display: flex;
     margin-top: 50px;
-    }
-.footer-text{
+}
+
+/* Define o estilo do texto no rodapé */
+.footer-text {
     color: var(--color-white);
     align-items: center;
     display: flex;
     padding-left: 20px;
 }
+
+/* Define as regras de estilo para telas menores (max-width: 768px) */
 @media screen and (max-width: 768px) {
-    .footer{
+    .footer {
         margin: 2rem -5.5rem 2rem 4rem;
     }
-
 }
+
+/* Define as regras de estilo para telas ainda menores (max-width: 600px) */
 @media screen and (max-width: 600px) {
-    .footer{
+    .footer {
         margin: 2rem -5.5rem 2rem 2rem;
     }
-    .footer-text{
+    .footer-text {
         font-size: 12px;
         padding-left: 10px;
     }
 }
+

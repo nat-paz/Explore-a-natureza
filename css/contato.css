@@ -1,9 +1,12 @@
-.ctt{
+/* Define o estilo da seção de conteúdo */
+.ctt {
     margin-left: 80px;
     margin-top: 50px;
     display: flex;
 }
-.ctt-title{
+
+/* Define o estilo do título da seção de conteúdo */
+.ctt-title {
     color: var(--color-title);
     font-family: var(--font-display);
     font-size: 64px;
@@ -13,60 +16,66 @@
     margin-left: 80px;
     margin-top: 50px;
 }
-.informações{
+
+/* Define o estilo para a seção de informações */
+.informações {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     margin-left: 32px;
     gap: 15px;
 }
-iframe{
+
+/* Define o estilo para os elementos <iframe> na seção de conteúdo */
+iframe {
     margin-top: 50px;
     display: flex;
 }
 
+/* Define as regras de estilo para telas menores (max-width: 768px) */
 @media screen and (max-width: 768px) {
-    .ctt-title{
+    .ctt-title {
         font-size: 60px;
     }
-    iframe{
+    iframe {
         margin-top: 35px;
     }
 }
 
-
+/* Define as regras de estilo para telas ainda menores (max-width: 600px) */
 @media screen and (max-width: 600px) {
-    .ctt{
+    .ctt {
         margin-left: 40px;
         display: grid;
         justify-content: space-around;
     }
-    .ctt-title{
+    .ctt-title {
         margin-left: 80px;
         font-size: 55px;
     }
-    .informações{
+    .informações {
         font-size: 16px;
         gap: 0;
         margin-left: 0px;
     }
-    iframe{
+    iframe {
         height: 350px;
         width: 400px;
     }
 }
 
+/* Define as regras de estilo para telas muito pequenas (max-width: 470px) */
 @media screen and (max-width: 470px) {
-    .ctt{
+    .ctt {
         margin-left: 15px;
         display: grid;
         justify-content: space-around;
     }
-    .ctt-title{
+    .ctt-title {
         margin-left: 40px;
         font-size: 48px;
     }
-    iframe{
+    iframe {
         height: 250px;
         width: 300px;
         margin-left: 30px;

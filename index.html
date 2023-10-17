@@ -10,20 +10,25 @@
     <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+    <!-- Div principal -->
     <div class="tela">
         <header class="header">
+            <!-- Menu de navegação -->
             <nav class="menu">
+                <!-- Botão de menu (mostrado somente para telas de dispositivos moveis) -->
                 <div class="toggle">
                     MENU
                     <span class="material-symbols-outlined">
                         menu
                     </span>
                 </div>
+                <!-- Links do menu -->
                 <div class="js-menu">
                     <div class="menu-link">
                     <span class="material-symbols-outlined">
                             eco
                         </span>
+                        <!-- href para que o link o direcione a parte do site com esse conteudo -->
                         <a href="#nature" class="natureza">Natureza</a>
                     </div>
                     <div class="menu-link">
@@ -50,8 +55,10 @@
                 </div>
             </nav>
         </header>
+        <!-- Título principal da página -->
         <h1>EXPLORE A NATUREZA!🌲</h1>
         <main class="main">
+            <!-- Lista de imagens que estão em uma tela de scroll -->
             <ul class="scroll js-scroll">
                 <li>
                     <img class = "img" src="./img/natureza.jpg" alt="">
@@ -68,9 +75,11 @@
             </ul>
             <div class="conteudo js-conteudo" id="nature">
                 <section>
+                    <!-- Título e ícone -->
                     <div class="main-title">
                         <h2><span class="material-symbols-outlined">eco</span>NATUREZA:</h2>
                     </div>
+                     <!-- Texto sobre a Natureza -->
                     <p class="main-text">Explorar a natureza é uma atividade incrível que pode proporcionar uma série de benefícios
                         físicos e mentais. Ao estar em contato com a natureza, é possível reduzir o estresse, aumentar a
                         criatividade e melhorar o bem-estar geral.</p>
@@ -138,9 +147,11 @@
                 </section>
             </div>
         </main>
+        <!-- Seção de Perguntas Frequentes (FAQ) -->
         <section class="faq1 js-faq" id="faaq">
             <h2 class="faq-title">FAQ💬..........</h2>
             <div>
+                 <!-- Perguntas e respostas sobre diferentes tópicos, icone que indica se a parte do texto esta aberta ou feixada-->
                 <h3>Por que é importante explorar a natureza?<span>▼</span></h3>
                 <p>Explorar a natureza é importante por diversos motivos. Isso nos permite reconectar com o meio ambiente, relaxar, reduzir o estresse,
                     obter benefícios para a saúde mental e física, aprender sobre a biodiversidade e desenvolver um maior senso de apreciação e
@@ -221,8 +232,10 @@
                     Ter conhecimentos básicos de sobrevivência.</p>
             </div>
         </section>
+                <!-- Seção de Contato -->
         <h2 class="ctt-title" id="ctt">CONTATO 📞</h2>
         <section class="ctt">
+            <!-- Mapa incorporado do Google e informações de contato -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.313639680141!2d-46.893952126018036!3d-23.19523784824099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf2697ac7191fd%3A0x300031e85e07f9e8!2sEscola%20Senai%20Conde%20Alexandre%20Siciliano!5e0!3m2!1spt-BR!2sbr!4v1690894049337!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="informações">
                 <p>Escola Senai Conde Alexandre Siciliano</p>
@@ -234,20 +247,25 @@
             <p class="footer-text">© 2023 - Todos os direitos reservados</p>
         </footer>
     </div>
+    <!-- Início da seção do modal -->
     <div class=" modal js-modal">
+        <!-- Botão de fechar o modal -->
         <span class="material-symbols-outlined modal-close">
             close
         </span>
+         <!-- Formulário do modal -->
         <form class="modal-forms">
             <h3>RECEBA NOTIFICAÇÕES:</h3>
             <label for="">Email:</label>
             <input name="email" type="email" placeholder="Insira seu email" required="">
             <input type="submit" value="Enviar">
+            <!-- Mensagem de sucesso após o envio do formulário -->
             <div class="msg-sucesso">Cadastro feito com sucesso!</div>
             <div id="msg"></div>
         </form>
        
     </div>
+    <!-- Inclusão de script JavaScript -->
     <script type="module" src="./js/index.js"></script>
 </body>
 </html>
